@@ -1,0 +1,24 @@
+/** Tennis Shoes:
+Nike (10)
+Adidas (5)
+Jordans (50)
+Puma (20)
+Reebok (25)
+Fila (5)
+**/
+
+CREATE TABLE  shoes (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER, price INTEGER, size INTEGER);
+
+INSERT INTO shoes VALUES (1, "Nike", 10, 3, 80, 8);
+INSERT INTO shoes VALUES (2, "Adidas", 5, 5, 55, 7);
+INSERT INTO shoes VALUES (3, "Jordans", 50, 8, 125, 10);
+INSERT INTO shoes VALUES (4, "Puma", 20, 3, 65, 9);
+INSERT INTO shoes VALUES (5, "Reebok", 25, 5, 45, 9);
+INSERT INTO shoes VALUES (6, "Fila", 5, 1, 15, 7);
+
+-display all available shoes
+SELECT * FROM shoes;
+
+- display the database ordered by aisle and price
+SELECT * FROM shoes WHERE aisle > 3 ORDER BY price;
+
